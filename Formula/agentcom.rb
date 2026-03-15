@@ -4,8 +4,13 @@ class Agentcom < Formula
   version "0.1.4"
 
   on_macos do
-    url "https://github.com/malleus35/agentcom/releases/download/v0.1.4/agentcom_0.1.4_darwin_amd64.tar.gz"
-    sha256 "328212770c9762fa02a428689521421ebaf56d81c20cc50e39f122522bd21877"
+    if Hardware::CPU.arm?
+      url "https://github.com/malleus35/agentcom/releases/download/v0.1.4/agentcom_0.1.4_darwin_arm64.tar.gz"
+      sha256 "bb8782db04449a96696b22e00aa9a6824e43ec8c59d00c1b4e7fdce6ecdbb136"
+    else
+      url "https://github.com/malleus35/agentcom/releases/download/v0.1.4/agentcom_0.1.4_darwin_amd64.tar.gz"
+      sha256 "328212770c9762fa02a428689521421ebaf56d81c20cc50e39f122522bd21877"
+    end
   end
 
   on_linux do
