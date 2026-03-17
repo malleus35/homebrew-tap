@@ -1,27 +1,27 @@
 class Agentcom < Formula
   desc "Real-time communication CLI for parallel AI coding agents"
   homepage "https://github.com/malleus35/agentcom"
-  version "0.2.3"
+  version "0.3.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/malleus35/agentcom/releases/download/v0.2.3/agentcom_0.2.3_darwin_arm64.tar.gz"
-      sha256 "02640b53105c77efdcb4330774b6720cd5a6924f4ea6ac02b0b8bcd35a1ef664"
+      url "https://github.com/malleus35/agentcom/releases/download/v0.3.0/agentcom_0.3.0_darwin_arm64.tar.gz"
+      sha256 "4bd79ac195f6480d6add9c5d68c2779a35cde9947be98f9572e28ed831a8e5ec"
     end
     on_intel do
-      url "https://github.com/malleus35/agentcom/releases/download/v0.2.3/agentcom_0.2.3_darwin_amd64.tar.gz"
-      sha256 "a6b5ec58772965211b684214cb40c224b04b75c95f83084fb5b44910107bdf55"
+      url "https://github.com/malleus35/agentcom/releases/download/v0.3.0/agentcom_0.3.0_darwin_amd64.tar.gz"
+      sha256 "5d36722f54106e7e0d7422d7ac83ab190936ec8bc66d2eeb4525a45a02bcb72d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/malleus35/agentcom/releases/download/v0.2.3/agentcom_0.2.3_linux_arm64.tar.gz"
-      sha256 "44381c37cbada97e3b1f86cc61dc8f50033d8f4b1970ce45796749dfb8208b6a"
+      url "https://github.com/malleus35/agentcom/releases/download/v0.3.0/agentcom_0.3.0_linux_arm64.tar.gz"
+      sha256 "64a0532b4f6ff0b89b7e6de9c4241fa88cd9e006ef4a88110d899098caae1ff9"
     end
     on_intel do
-      url "https://github.com/malleus35/agentcom/releases/download/v0.2.3/agentcom_0.2.3_linux_amd64.tar.gz"
-      sha256 "c55c6df9cc83b3f637698c89fa712e6c11e007c3d1a7da02cf069e7016537885"
+      url "https://github.com/malleus35/agentcom/releases/download/v0.3.0/agentcom_0.3.0_linux_amd64.tar.gz"
+      sha256 "2cada0a6bddb72484a86ca5007547106d1032663a2e6a68d29bf772e3dd63441"
     end
   end
 
