@@ -1,27 +1,27 @@
 class Agentcom < Formula
   desc "Real-time communication CLI for parallel AI coding agents"
   homepage "https://github.com/malleus35/agentcom"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/malleus35/agentcom/releases/download/v0.3.0/agentcom_0.3.0_darwin_arm64.tar.gz"
-      sha256 "fd2b1454dcc722d609c482df276dbc5f729711c1b569bf515ed5dfcf1f7d531e"
+      url "https://github.com/malleus35/agentcom/releases/download/v0.4.0/agentcom_0.4.0_darwin_arm64.tar.gz"
+      sha256 "f46ef08b82a6d7b37d9faa53a98c00813cfeaf069481809536ad82a5fdfdccef"
     end
     on_intel do
-      url "https://github.com/malleus35/agentcom/releases/download/v0.3.0/agentcom_0.3.0_darwin_amd64.tar.gz"
-      sha256 "27bb0bda39a472f0fbee13190979debdab8003611e7c8679bf5eeb38a916ab88"
+      url "https://github.com/malleus35/agentcom/releases/download/v0.4.0/agentcom_0.4.0_darwin_amd64.tar.gz"
+      sha256 "c2d297bcbd453d875afc546522f7ea8df0bb64b1eb9affbb300f1ce9f3c11510"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/malleus35/agentcom/releases/download/v0.3.0/agentcom_0.3.0_linux_arm64.tar.gz"
-      sha256 "0d921968530939318c01de1e25041031138d76919ffec4d93aa530e856829927"
+      url "https://github.com/malleus35/agentcom/releases/download/v0.4.0/agentcom_0.4.0_linux_arm64.tar.gz"
+      sha256 "8de59e7b5ce39bbbd737bf666bf6f97c997eb9e95eec5f7ed521290f6605dee8"
     end
     on_intel do
-      url "https://github.com/malleus35/agentcom/releases/download/v0.3.0/agentcom_0.3.0_linux_amd64.tar.gz"
-      sha256 "f3970f3280924b3f231f130553bc3caf1db1f80d552420173952142094b675ac"
+      url "https://github.com/malleus35/agentcom/releases/download/v0.4.0/agentcom_0.4.0_linux_amd64.tar.gz"
+      sha256 "2cae41300622c0e9194350cda9aef5c2388fc3e501c134088142d73f04a6797d"
     end
   end
 
@@ -30,6 +30,6 @@ class Agentcom < Formula
   end
 
   test do
-    assert_match "agentcom", shell_output("#<built-in function bin>/agentcom version")
+    assert_match "agentcom", shell_output("#{bin}/agentcom version")
   end
 end
