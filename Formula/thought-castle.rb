@@ -1,8 +1,8 @@
 class ThoughtCastle < Formula
   desc "Local-first LLM session vault and knowledge CLI"
   homepage "https://github.com/malleus35/thought-castle"
-  url "https://github.com/malleus35/thought-castle/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c367db19e824d291c84a320dcc9524570f335675d043d6cf1daea55349e99472"
+  url "https://github.com/malleus35/thought-castle/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "759dfef153888aba5fc5b8a5a5a8f7ae68714c54e1f4219d33ba0eae6ac205f1"
   license "MIT"
 
   depends_on "rust" => :build
