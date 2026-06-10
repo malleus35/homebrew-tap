@@ -1,8 +1,8 @@
 class ThoughtCastle < Formula
   desc "Local-first LLM session vault and knowledge CLI"
   homepage "https://github.com/malleus35/thought-castle"
-  url "https://github.com/malleus35/thought-castle/archive/refs/tags/v0.1.3.tar.gz"
-  sha256 "098c4fa1a0e05b5beb2c34961ec62ff3bea8a2461cbc24a35a38eb4adc86b5db"
+  url "https://github.com/malleus35/thought-castle/archive/refs/tags/v0.1.4.tar.gz"
+  sha256 "e89a76b80ecb1aa6a9278f949f0096b55ce60b6d3de21391e1f00350fb68df2e"
   license "MIT"
 
   depends_on "rust" => :build
@@ -23,7 +23,7 @@ class ThoughtCastle < Formula
 
   test do
     version = shell_output("#{bin}/thought-castle --version").strip
-    assert_equal "thought-castle 0.1.3", version
+    assert_equal "thought-castle 0.1.4", version
 
     output = shell_output("#{bin}/thought-castle")
     assert_match "thought-castle", output
